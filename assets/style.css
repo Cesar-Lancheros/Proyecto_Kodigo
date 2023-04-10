@@ -1,0 +1,91 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styles */
+  body {
+    background: #f0f0f0 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect x='0' y='0' width='50' height='50' fill='%23999999'/%3E%3Crect x='50' y='50' width='50' height='50' fill='%23999999'/%3E%3Crect x='50' y='0' width='50' height='50' fill='%23bbbbbb'/%3E%3Crect x='0' y='50' width='50' height='50' fill='%23bbbbbb'/%3E%3C/svg%3E") repeat;
+    font-family: sans-serif;
+    background: white url("assets/background.png") repeat;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: blue;
+    color: white;
+    padding: 20px;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  /* Navigation styles */
+  nav {
+    background: linear-gradient(to bottom right, blue, lightblue);
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  /* Section styles */
+  section {
+    background-image: radial-gradient(circle, #ffffff 5%, #0074d9 5%);
+  background-size: 30px 30px;
+    padding: 20px;
+    color: white;
+  }
+  
+  section h2 {
+    margin-top: 0;
+  }
+  
+  /* Footer styles */
+  footer {
+    background: linear-gradient(to bottom right, lightblue, blue);
+    color: white;
+    padding: 10px;
+  }
+  
+  /* Media queries */
+  @media screen and (max-width: 768px) {
+    /* Styles for tablet devices */
+    nav ul {
+      flex-direction: column;
+    }
+    
+    nav li {
+      margin: 10px 0;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    /* Styles for mobile devices */
+    header h1 {
+      font-size: 24px;
+    }
+    
+    nav li {
+      margin: 5px 0;
+    }
+    
+    footer p {
+      font-size: 12px;
+    }
+  }
